@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unblocked Games Hub</title>
+    <link id="favicon" rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🎮 UnblockedHub</div>
+        <nav>
+            <button class="nav-btn active" onclick="filterCategory('all', this)">All</button>
+            <button class="nav-btn" onclick="filterCategory('action', this)">Action</button>
+            <button class="nav-btn" onclick="filterCategory('puzzle', this)">Puzzle</button>
+            <button class="nav-btn" onclick="filterCategory('sports', this)">Sports</button>
+        </nav>
+        
+        <div class="stealth-controls">
+            <select id="cloakSelect" onchange="changeCloak()">
+                <option value="none">Normal Theme</option>
+                <option value="classroom">Google Classroom</option>
+                <option value="drive">Google Drive</option>
+                <option value="canvas">Canvas</option>
+            </select>
+
+            <select id="panicSelect" onchange="updatePanicUrl()">
+                <option value="https://wikipedia.org">Wikipedia</option>
+                <option value="https://google.com">Google</option>
+                <option value="https://google.com">Google Docs</option>
+                <option value="custom">Custom URL...</option>
+            </select>
+
+            <button class="panic-btn" onclick="triggerPanic()">Panic [Esc]</button>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchBar" placeholder="Search games..." onkeyup="searchGames()">
+        </div>
+    </header>
+
+    <main>
+        <div class="game-grid" id="gameGrid"></div>
+    </main>
+
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeGame()">&times;</span>
+            <iframe id="gameFrame" src="" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
