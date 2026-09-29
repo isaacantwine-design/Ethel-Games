@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Slope",
+    "category": "action",
+    "thumbnail": "https://githubusercontent.com",
+    "iframeUrl": "https://github.io"
+  },
+  {
+    "title": "Retro Bowl",
+    "category": "sports",
+    "thumbnail": "https://githubusercontent.com",
+    "iframeUrl": "https://retrobowl.me"
+  },
+  {
+    "title": "2048",
+    "category": "puzzle",
+    "thumbnail": "https://wikimedia.org",
+    "iframeUrl": "https://github.io"
+  },
+  {
+    "title": "Cookie Clicker",
+    "category": "action",
+    "thumbnail": "https://dashnet.org",
+    "iframeUrl": "https://dashnet.org"
+  }
+]
